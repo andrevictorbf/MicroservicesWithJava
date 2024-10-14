@@ -1,13 +1,13 @@
-package br.com.api_produtos.api_produtos;
+package br.com.api_pedidos.api_pedidos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApiProdutosApplication {
+public class StartUpPedidos {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApiProdutosApplication.class, args);
+		SpringApplication.run(StartUpPedidos.class, args);
 	}
 
 }
