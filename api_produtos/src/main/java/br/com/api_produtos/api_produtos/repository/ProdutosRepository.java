@@ -5,6 +5,9 @@ import org.springframework.stereotype.Repository;
 
 import br.com.api_produtos.api_produtos.model.Produtos;
 
+
+
 @Repository
 public interface  ProdutosRepository extends JpaRepository<Produtos, Long> {
+    
 }
