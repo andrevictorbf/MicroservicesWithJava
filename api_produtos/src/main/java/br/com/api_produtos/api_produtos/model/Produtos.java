@@ -30,6 +30,8 @@ public class Produtos {
     private Long id;
     @Column(nullable = false, length = 100)
     private String nome;
+    //Implementar Valor
+    private Double valorUnitario;
     @Column(nullable = false, length = 60)
     private String fornecedor;
     @Column(nullable = false)
@@ -52,7 +54,7 @@ public class Produtos {
             null, 
             produtosDto.nome(), 
             produtosDto.fornecedor(), 
-            null, // Campo 'imagem' pode ser definido separadamente, se necessário
+            null,
             produtosDto.barCode(), 
             produtosDto.disponivel(), 
             produtosDto.produtosTipo(), 
