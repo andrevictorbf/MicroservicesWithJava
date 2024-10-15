@@ -11,6 +11,8 @@ public record ProdutosDto(
         @NotBlank
         String nome,
         @NotBlank
+        Double valorUnitario,
+        @NotBlank
         @Min(1)
         @Max(100)
         String fornecedor,
@@ -21,8 +23,8 @@ public record ProdutosDto(
         ProdutosTipo produtosTipo) {
 
     public ProdutosDto(Produtos produtos) {
-        this(produtos.getId(), produtos.getNome(), produtos.getFornecedor(), produtos.getBarCode(),
-                produtos.getDisponivel(), produtos.getProdutosTipo()
+        this(produtos.getId(), produtos.getNome(), produtos.getValorUnitario(), produtos.getFornecedor(),
+                produtos.getBarCode(), produtos.getDisponivel(), produtos.getProdutosTipo()
         );
     }
 

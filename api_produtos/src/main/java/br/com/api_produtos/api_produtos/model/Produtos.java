@@ -30,7 +30,7 @@ public class Produtos {
     private Long id;
     @Column(nullable = false, length = 100)
     private String nome;
-    //Implementar Valor
+    @Column(nullable = false)
     private Double valorUnitario;
     @Column(nullable = false, length = 60)
     private String fornecedor;
@@ -53,6 +53,7 @@ public class Produtos {
         return new Produtos(
             null, 
             produtosDto.nome(), 
+            produtosDto.valorUnitario(), 
             produtosDto.fornecedor(), 
             null,
             produtosDto.barCode(), 
