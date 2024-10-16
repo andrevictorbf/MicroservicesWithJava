@@ -1,13 +1,13 @@
-package br.com.gateway.api_gateway;
+package br.com.registry.service_registry;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApiGatewayApplication {
+public class StartUpServiceRegistry {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApiGatewayApplication.class, args);
+		SpringApplication.run(StartUpServiceRegistry.class, args);
 	}
 
 }
