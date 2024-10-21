@@ -1,1 +1,22 @@
-spring.application.name=api_pedidos
+spring:
+  application:
+    name: api-pedidos
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/pedidos-db?createDatabaseIfNotExist=true
+    password: admin123
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+
+server:
+  port: 0

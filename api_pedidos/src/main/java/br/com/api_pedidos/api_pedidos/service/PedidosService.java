@@ -47,9 +47,9 @@ public class PedidosService {
         //retorna uma mensagem amigavel de delete para o user
         if (pedidosRepository.existsById(id)) {
             pedidosRepository.deleteById(id);
-            return "Produto deletado com sucesso!";
+            return "Pedido deletado com sucesso!";
         } else {
-            return "Produto não encontrado!";
+            return "Pedido não encontrado!";
         }
     }
 
